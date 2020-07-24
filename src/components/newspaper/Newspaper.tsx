@@ -40,22 +40,33 @@ export default class Newspaper extends React.Component<NewspaperProps, Newspaper
                     </article>
                     <div className="vertical-separator bio-malt"></div>
                     <article className="malt">
-                        <h2>Freelancing</h2>
-                        <p>Vous souhaitez travailler avec un « développeur créatif » en freelance ? Contactez Baptiste Drillien via Malt, « Simplicité et sécurité pour toutes vos missions ». </p>
-                        <a href="https://www.malt.fr/profile/baptistedrillien?q=baptiste%20drillien&searchid=5ef9195b73ce720007b62924" target="_blank"  rel="noopener noreferrer">
-                            Hire Me !
+                        <a  href="https://www.malt.fr/profile/baptistedrillien?q=baptiste%20drillien&searchid=5ef9195b73ce720007b62924" target="_blank"  rel="noopener noreferrer">
+                            <h2>Freelancing</h2>
+                            <p>Vous souhaitez travailler avec un « développeur créatif » en freelance ? Contactez Baptiste Drillien via Malt, « Simplicité et sécurité pour toutes vos missions ». </p>
+                            <div className="fake-link">
+                                Hire Me !
+                            </div>
                         </a>
                     </article>
                     <div className="horizontal-separator"></div>
                     <ToggleDarkMode />
                     <div className="vertical-separator bio-malt"></div>
                     <article className="rooockets">
-                        <h2>Rooockets, « I think fundamentally the future is vastly more exciting we're a spacefaring civilization. »</h2>
-                        <img src="long-march.jpg" alt=""/>
+                        <a href="">
+                            <div>
+                                <h2>Rooockets, « I think fundamentally the future is vastly more exciting we're a spacefaring civilization. »</h2>
+                                <div className="p-container">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati consectetur sunt deleniti ullam doloribus, facere autem unde nihil libero pariatur magni rerum laborum, voluptas sapiente ipsum! In quibusdam temporibus officiis.</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure odit mollitia quae beatae autem blanditiis accusantium natus alias at quaerat, consequuntur tenetur hic voluptate magnam quod laudantium inventore fugit suscipit!</p>
+                                </div>
+                            </div>
+                            
+                            <img src="falcon9.jpg" alt=""/>
+                        </a>
                     </article>
                     <div className="horizontal-separator"></div>
                     <article className="waffle">
-
+                        
                     </article>
                     <div className="horizontal-separator"></div>
                 </main>
