@@ -1,13 +1,22 @@
 import React from 'react'
-import './newspaper.css'
+// import './newspaper.css'
 import ToggleDarkMode from '../toggleDarkMode/ToggleDarkMode'
 
-interface NewspaperProps {}
+interface NewspaperProps {
+    toggle:boolean
+}
 interface NewspaperState {}
 
 export default class Newspaper extends React.Component<NewspaperProps, NewspaperState> {
+    constructor(props: NewspaperProps) {
+        super(props)
+    }
+
     render() {
-        return <div className="newspaper-container" id={window.localStorage.getItem('theme') ? window.localStorage.getItem('theme')?.toString() : 'light'}>
+        return <div>
+            {
+                this.props.toggle &&
+                <div className="newspaper-container" id={window.localStorage.getItem('theme') ? window.localStorage.getItem('theme')?.toString() : 'light'}>
             <div className="paper">
                 <header>
                     <h1>Baptiste Drillien</h1>
@@ -52,7 +61,7 @@ export default class Newspaper extends React.Component<NewspaperProps, Newspaper
                     <ToggleDarkMode />
                     <div className="vertical-separator bio-malt"></div>
                     <article className="rooockets">
-                        <a href="">
+                        <a href="https://baptistedri.github.io/space_launches/" target="_blank">
                             <div>
                                 <h2>Rooockets, « I think fundamentally the future is vastly more exciting we're a spacefaring civilization. »</h2>
                                 <div className="p-container">
@@ -68,9 +77,17 @@ export default class Newspaper extends React.Component<NewspaperProps, Newspaper
                     <article className="waffle">
                         
                     </article>
+                    <div className="vertical-separator">
+
+                    </div>
+                    <article>
+
+                    </article>
                     <div className="horizontal-separator"></div>
                 </main>
             </div>
+        </div>
+            }
         </div>
     }
 }

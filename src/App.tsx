@@ -2,12 +2,13 @@ import React from 'react'
 import './App.css'
 import './reset.css'
 
-
 import Newspaper from './components/newspaper/Newspaper'
+import NewspaperContainer from './components/newspaperContainer/NewspaperContainer'
 
 function App() {
     return <div className="App">
-        <Newspaper />
+        <Newspaper toggle={false} />
+        <NewspaperContainer />
     </div>
 }
 

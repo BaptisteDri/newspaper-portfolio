@@ -1,0 +1,50 @@
+section#hireme {
+    width: 20%;
+}
+
+#hireme a {
+    color: unset;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    transition: 0.3s;
+}
+#hireme a:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+#hireme a:hover .fake-link {
+    transition: 0.3s;
+    background-color: #ff396c;
+}
+
+#hireme h2 {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+#hireme p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#hireme .p-bott {
+    padding-bottom: 10px;
+}
+
+#hireme .fake-link {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Playfair Display SC;
+    font-size: 1.6rem;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 84px;
+    transition: 0.3s;
+}
